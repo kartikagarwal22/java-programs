@@ -1,0 +1,29 @@
+package Programs;
+
+import java.util.Scanner;
+
+public class yforyesnforno 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner obj = new Scanner(System.in);
+		char ch='y';
+		while(ch=='y'||ch=='Y')
+		{
+			System.out.println("enter the no.");
+			int n = obj.nextInt();
+			int f=1;
+			for(int i=n;i>0;i--)
+			{
+				f=f*i;
+			}
+			System.out.println(f);
+			System.out.println("do you want to continue");
+			System.out.println("press y for yes and n for no");
+			ch=obj.next().charAt(0);
+		}
+            System.out.println("thank you");
+	}
+
+}
